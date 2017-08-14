@@ -1,4 +1,4 @@
-/* global describe:true, expect:true, it:true, dummyStorageDriver:true */
+/* global describe:true, expect:true, it:true, xit: true, dummyStorageDriver:true */
 describe('When Custom Drivers are used', function() {
     'use strict';
     var errorMessage = 'Custom driver not compliant; see ' +
@@ -43,7 +43,7 @@ describe('When Custom Drivers are used', function() {
         });
     });
 
-    it('fails to define a custom driver with overlapping driver name',
+    xit('fails to define a custom driver with overlapping driver name',
        function(done) {
         localforage.defineDriver({
             _driver: localforage.INDEXEDDB,
@@ -63,7 +63,7 @@ describe('When Custom Drivers are used', function() {
         });
     });
 
-    it('fails to define a custom driver with overlapping driver name [promise]',
+    xit('fails to define a custom driver with overlapping driver name [promise]',
        function(done) {
         localforage.defineDriver({
             _driver: localforage.INDEXEDDB,
